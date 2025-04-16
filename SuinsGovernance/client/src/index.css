@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased text-foreground;
+    background: linear-gradient(to right, #0f2231, #1a5e63, #38a1a8);
+    min-height: 100vh;
+  }
+  
+  .content-wrapper {
+    @apply bg-white rounded-lg shadow-xl my-4 mx-auto max-w-7xl;
+  }
+}
